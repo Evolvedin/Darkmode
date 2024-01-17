@@ -1,0 +1,112 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    transition: background-color 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1C2833;
+    color: #EAEDED;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header label {
+    margin-right: 10px;
+}
+
+header select {
+    padding: 6px 12px;
+    border: none;
+    background-color: #34495E;
+    color: #EAEDED;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header select:hover {
+    background-color: #5D6D7E;
+    color: #EAEDED;
+}
+
+main {
+    padding: 2rem;
+}
+
+article {
+    margin-bottom: 2rem;
+}
+
+article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.article-image {
+    width: 250px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    padding: 1rem 2rem;
+    background-color: #1C2833;
+    color: #EAEDED;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 0.5rem;
+    color: #EAEDED;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* THEMES */
+
+body[data-theme="light"] {
+    background-color: #EAEDED;
+    color: #1C2833;
+}
+
+body[data-theme="light"] .highlight {
+    background-color: darkblue;
+    color: white;
+}
+
+body[data-theme="dark"] {
+    background-color: #000;
+    color: #fff;
+}
+
+body[data-theme="dark"] .highlight {
+    background-color: red;
+    color: white;
+}
+
+body[data-theme="vintage"] {
+    background-color: #8E775A;
+    color: #2C2B2C;
+}
+
+body[data-theme="vintage"] .highlight {
+    background-color: #5B4B44;
+    color: #EAEDED;
+}
+
